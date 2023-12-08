@@ -1,0 +1,60 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/archivo-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* archivo-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/archivo-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* archivo-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/archivo-v19-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* archivo-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/archivo-v19-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Archivo, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #e4a0f7;
+}
+
+.header-nav {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.header-link {
+  text-decoration: none;
+}
