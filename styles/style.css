@@ -38,23 +38,7 @@ body {
   font-family: Archivo, sans-serif;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #e4a0f7;
-}
-
-.header-nav {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.header-nav-list {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
-
-.header-link {
-  text-decoration: none;
+.hero-section-title {
+  font-size: 67px;
+  font-weight: 900;
 }
