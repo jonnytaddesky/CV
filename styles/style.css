@@ -81,7 +81,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: center top;
-  /* background-size: cover; */
+  background-size: cover;
 }
 .hero-section-title {
   color: white;
