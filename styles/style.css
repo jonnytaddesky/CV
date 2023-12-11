@@ -1,91 +1,205 @@
+/* montserrat-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Archivo";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/archivo-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* archivo-600 - latin */
+/* montserrat-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Archivo";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/archivo-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* archivo-800 - latin */
+/* montserrat-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Archivo";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/archivo-v19-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* archivo-900 - latin */
+/* montserrat-900 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Archivo";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/archivo-v19-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/montserrat-v26-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* Base */
 * {
   padding: 0;
   margin: 0;
 }
-
-body {
-  font-family: Archivo, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
-
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #9283ff;
+}
+/* Header */
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-weight: 600;
 }
 
 .header-nav {
   width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header-nav-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .header-nav-list {
+  width: 100%;
   display: flex;
-  margin: 0;
-  padding: 0;
   justify-content: space-around;
   list-style: none;
-  padding: 20px 10px 20px 20px;
+  margin: 20px 10px 20px 10px;
 }
+
 .header-nav-item {
   text-decoration: none;
+  color: white;
+  transition: color 0.5s;
+}
+
+.header-nav-item:hover {
+  text-decoration: none;
+  color: #5d0089;
 }
 
 .header-button {
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   margin-right: 20px;
   margin-left: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #5d0089;
   border: 0;
+  font-weight: 600;
+  transition: color 0.5s;
 }
+
+.header-button:hover {
+  background-color: #5d0089;
+  color: white;
+}
+
+/* Hero */
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(
-      102.76deg,
-      rgba(18, 18, 17, 0.78) 2.03%,
-      rgba(18, 18, 17, 0.78) 58.46%,
-      rgba(18, 18, 17, 0.78) 90.36%
-    ),
-    url(/images/hero-background.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-color: #9283ff;
 }
+
 .hero-section-title {
   color: white;
   text-align: center;
   font-size: 80px;
   font-weight: 900;
+}
+/* About */
+.section-about {
+  padding: 200px 0 245px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid #9900f2; */
+}
+
+.section-about-title {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.section-about-info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section-about-item {
+  margin-bottom: 12px;
+  color: white;
+}
+
+.section-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0 80px 0;
+  /* border: 1px solid #9900f2; */
+}
+
+.section-skills-title {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.section-skills-list {
+  list-style: none;
+  width: 100%;
+  color: white;
+}
+
+.section-skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-skills-item {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #5d0089;
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+
+.section-skills-item:hover {
+  transform: scale(1.2);
+  background-color: #5d0089;
+  border: 1px solid #edcfff;
 }
