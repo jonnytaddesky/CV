@@ -189,17 +189,18 @@ body {
 
 .section-skills-item {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 50px;
-  width: 200px;
+  width: 170px;
   padding: 20px;
-  border: 1px solid #5d0089;
-  border-radius: 20px;
+  background-color: white;
+  color: #5d0089;
+  border-radius: 25px;
   transition: transform 0.5s;
 }
 
 .section-skills-item:hover {
   transform: scale(1.2);
   background-color: #5d0089;
-  border: 1px solid #edcfff;
+  color: white;
 }
