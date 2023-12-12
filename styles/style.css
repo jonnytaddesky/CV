@@ -126,7 +126,7 @@ body {
 
 /* Hero */
 .hero-section {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,6 +148,8 @@ body {
 }
 /* About */
 .section-about {
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0;
   display: flex;
   align-items: center;
