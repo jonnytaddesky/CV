@@ -57,11 +57,10 @@ html {
 }
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #9283ff;
 }
 /* Header */
 .header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -82,7 +81,7 @@ body {
 .header-nav-logo {
   width: 80px;
   height: 80px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .header-nav-list {
@@ -90,18 +89,21 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin: 20px 10px 20px 10px;
+  /* margin: 20px 10px 20px 10px; */
 }
 
 .header-nav-item {
   text-decoration: none;
-  color: white;
-  transition: color 0.5s;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  transition: color 0.3s;
 }
 
 .header-nav-item:hover {
   text-decoration: none;
-  color: #5d0089;
+  color: white;
+  background-color: #9283ff;
 }
 
 .header-button {
@@ -110,11 +112,11 @@ body {
   margin-right: 20px;
   margin-left: 10px;
   border-radius: 10px;
-  background-color: white;
-  color: #5d0089;
+  background-color: #9283ff;
+  color: white;
   border: 0;
   font-weight: 600;
-  transition: color 0.5s;
+  transition: color 0.3s;
 }
 
 .header-button:hover {
@@ -124,41 +126,60 @@ body {
 
 /* Hero */
 .hero-section {
-  padding: 272px 0;
-  background-color: #9283ff;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-logo {
+  width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero-section-title {
-  color: white;
+  color: #8178f9;
   text-align: center;
+  width: 100%;
   font-size: 80px;
   font-weight: 900;
 }
 /* About */
 .section-about {
-  padding: 200px 0 245px 0;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  /* border: 1px solid #9900f2; */
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.section-about-photo {
+  width: 250px;
 }
 
 .section-about-title {
   font-size: 50px;
   font-weight: 800;
-  color: white;
+  color: #9283ff;
 }
 
 .section-about-info {
   font-size: 18px;
   font-weight: bold;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .section-about-item {
   margin-bottom: 12px;
-  color: white;
+  color: #9283ff;
 }
 
+/* Skills */
 .section-skills {
   display: flex;
   flex-direction: column;
@@ -166,13 +187,13 @@ body {
   justify-content: center;
   text-align: center;
   padding: 100px 0 80px 0;
-  /* border: 1px solid #9900f2; */
 }
 
 .section-skills-title {
   font-size: 50px;
   font-weight: 800;
-  color: white;
+  color: #8178f9;
+  width: 100%;
 }
 
 .section-skills-list {
@@ -194,13 +215,13 @@ body {
   width: 170px;
   padding: 20px;
   background-color: white;
-  color: #5d0089;
+  color: #8178f9;
   border-radius: 25px;
   transition: transform 0.5s;
 }
 
 .section-skills-item:hover {
   transform: scale(1.2);
-  background-color: #5d0089;
+  background-color: #8178f9;
   color: white;
 }
