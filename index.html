@@ -10,49 +10,42 @@
   <body>
     <header class="header">
       <nav class="header-nav">
-        <a href="/">
-          <img class="header-nav-logo" src="./images/logo_svg.svg" alt="Logo" />
-        </a>
-        <ul class="header-nav-list">
-          <li><a class="header-nav-item" href="#">Home</a></li>
-          <li><a class="header-nav-item" href="#about_me">About me</a></li>
-          <li><a class="header-nav-item" href="#skills">Skills</a></li>
-          <li><a class="header-nav-item" href="#contacts">Contacts</a></li>
-        </ul>
+        <div class="nav-container">
+          <ul class="header-nav-list-left">
+            <li><a class="header-nav-item" href="#">Home</a></li>
+            <li><a class="header-nav-item" href="#about_me">About me</a></li>
+          </ul>
+          <img class="header-nav-logo" src="./images/logo.svg" alt="Logo" />
+          <ul class="header-nav-list-right">
+            <li><a class="header-nav-item" href="#skills">Skills</a></li>
+            <li><a class="header-nav-item" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
       </nav>
-      <button class="header-button" type="button">Contact me</button>
     </header>
     <main>
       <section class="hero-section">
-        <img
-          class="hero-section-logo"
-          src="./images/hero-logo.png"
-          alt="Logo"
-        />
-        <h1 class="hero-section-title">Frontend Developer</h1>
+        <div class="container">
+          <img
+            class="hero-section-photo"
+            src="./images/my-photo.jpg"
+            alt="My photo"
+          />
+          <h1 class="hero-section-title">Frontend <br />Developer</h1>
+        </div>
       </section>
       <section id="about_me" class="section-about">
-        <img
-          class="section-about-photo"
-          src="./images/my-photo.jpg"
-          alt="My photo"
-        />
-        <h2 class="section-about-title">
-          I'm <br />
-          Artem Syvohlaz <br />
-          About me
-        </h2>
-
+        <h2 class="section-about-title">About me</h2>
         <div class="section-about-info">
           <p class="section-about-item">
             Hello, everyone! Now at the beginning of the career of a
-            <span>front-end developer</span>.
+            <span>Frontend developer</span>.
           </p>
           <p class="section-about-item">
-            Passed a course on javascript from Genius Space and Mate Academy.
+            Passed a course on JavaScript from Genius Space and Mate Academy.
           </p>
           <p class="section-about-item">
-            I am alsoin the final stage of a course on HTML/CSS. <br />
+            I am also in the final stage of a course on HTML/CSS. <br />
             In parallel, I`m studying React. I really want to get a job in the
             field of Frontend, <br />
             because I enjoy creating websites and their dynamism.
@@ -88,31 +81,99 @@
                 <a>BEM</a>
               </li>
             </div>
+            <div>
+              <li class="section-skills-item">
+                <a>Git</a>
+              </li>
+              <li class="section-skills-item">
+                <a>HTMX</a>
+              </li>
+              <li class="section-skills-item">
+                <a>Figma</a>
+              </li>
+            </div>
           </div>
         </ul>
       </section>
       <section id="contacts" class="section-contact">
         <h2 class="contact-section-title">Contact</h2>
-        <div class="container-contacts">
-          <div>
-            <img src="" alt="" />
-            <a href="mailto:">artem.syvohlaz@gmail.com</a>
-            <img src="" alt="" />
-            <a href="tel:+380958293431">+38(095)-829-34-31</a>
-            <img src="" alt="" />
-            <a href="https://www.linkedin.com/in/artem-syvohlaz-01aa0b1a1/">
-              LinkedIn
-            </a>
+        <div class="container-contact">
+          <div class="contact-info">
+            <div class="mail contact">
+              <a
+                class="logo"
+                href="mailto:artem.syvohlaz@gmail.com"
+                target="_blank"
+              >
+                <svg class="contact-address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-mail3"></use>
+                </svg>
+              </a>
+              <p class="item-contact">artem.syvohlaz@gmail.com</p>
+            </div>
+            <div class="phone contact">
+              <a class="logo" href="tel:+380958293431" target="_blank">
+                <svg class="contact-address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </a>
+              <p class="item-contact">+38(095)-829-34-31</p>
+            </div>
+            <div class="location contact">
+              <a class="logo">
+                <svg class="contact-address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-location2"></use>
+                </svg>
+              </a>
+              <p class="item-contact">Kyiv, Ukraine</p>
+            </div>
           </div>
-          <div>
-            <form action="">
-              <label for=""></label>
-              <input type="text" />
+          <div class="form">
+            <form class="modal-form" name="contact-form" autocomplete="off">
+              <div>
+                <label class="visually-hidden" for="user-name"> Ім'я </label>
+                <input
+                  class=""
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Ім'я"
+                  minlength="2"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div class="">
+                <label class="visually-hidden" for="user-tel"> Телефон </label>
+                <input
+                  class=""
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  pattern="^\+[0-9]{12}"
+                  placeholder="Телефон"
+                  required
+                />
+              </div>
+              <div class="">
+                <label class="visually-hidden" for="user-email">
+                  Електронна пошта
+                </label>
+                <input
+                  class=""
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Електронна пошта"
+                  required
+                />
+              </div>
+              <button class="" type="submit">Send</button>
             </form>
           </div>
         </div>
       </section>
     </main>
-    <!-- <footer>...Footer to be continued</footer> -->
+    <footer></footer>
   </body>
 </html>
