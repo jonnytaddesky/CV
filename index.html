@@ -59,7 +59,7 @@
         <h2 class="section-skills-title">Skills</h2>
         <ul class="section-skills-list">
           <div class="section-skills-container">
-            <div>
+            <div class="section-row-skills">
               <li class="section-skills-item">
                 <a>HTML 5</a>
               </li>
@@ -70,7 +70,7 @@
                 <a>JavaScript</a>
               </li>
             </div>
-            <div>
+            <div class="section-row-skills">
               <li class="section-skills-item">
                 <a>React</a>
               </li>
@@ -81,7 +81,7 @@
                 <a>BEM</a>
               </li>
             </div>
-            <div>
+            <div class="section-row-skills">
               <li class="section-skills-item">
                 <a>Git</a>
               </li>
@@ -130,50 +130,82 @@
           </div>
           <div class="form">
             <form class="modal-form" name="contact-form" autocomplete="off">
-              <div>
-                <label class="visually-hidden" for="user-name"> Ім'я </label>
-                <input
-                  class=""
-                  type="text"
-                  id="user-name"
-                  name="user-name"
-                  placeholder="Ім'я"
-                  minlength="2"
-                  maxlength="20"
-                  required
-                />
+              <div class="container-form"></div>
+              <div class="general-input">
+                <div class="modal-form-field">
+                  <label
+                    class="form-field-label visually-hidden"
+                    for="user-name"
+                  >
+                    Ім'я
+                  </label>
+                  <input
+                    class="form-field-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+                <div class="modal-form-field">
+                  <label
+                    class="form-field-label visually-hidden"
+                    for="user-tel"
+                  >
+                    Телефон
+                  </label>
+                  <input
+                    class="form-field-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    pattern="^\+[0-9]{12}"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+                <div class="modal-form-field">
+                  <label
+                    class="form-field-label visually-hidden"
+                    for="user-email"
+                  >
+                    Електронна пошта
+                  </label>
+                  <input
+                    class="form-field-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="button-send" type="submit">Send</button>
               </div>
-              <div class="">
-                <label class="visually-hidden" for="user-tel"> Телефон </label>
-                <input
-                  class=""
-                  type="tel"
-                  id="user-tel"
-                  name="user-tel"
-                  pattern="^\+[0-9]{12}"
-                  placeholder="Телефон"
-                  required
-                />
+              <div class=".modal-form-field-textarea">
+                <textarea
+                  class="textarea"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
               </div>
-              <div class="">
-                <label class="visually-hidden" for="user-email">
-                  Електронна пошта
-                </label>
-                <input
-                  class=""
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  placeholder="Електронна пошта"
-                  required
-                />
-              </div>
-              <button class="" type="submit">Send</button>
             </form>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <img class="footer-logo" src="./images/footer-logo.svg" alt="Logo" />
+        <p class="footer-term">
+          &copy;Цей сайт використовується як портфолія для резюме
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

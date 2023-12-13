@@ -219,6 +219,8 @@ section {
   justify-content: center;
   text-align: center;
   height: 800px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #ffefcd;
 }
 
@@ -233,19 +235,28 @@ section {
 .section-skills-list {
   list-style: none;
   width: 100%;
+  margin: 0 auto;
   color: white;
 }
 
 .section-skills-container {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.section-row-skills {
+  display: flex;
+  width: 100%;
   justify-content: space-around;
 }
 
 .section-skills-item {
   font-size: 35px;
   font-weight: 500;
-  margin-bottom: 50px;
+  gap: 20px;
   width: 170px;
   padding: 30px;
   background-color: #424530;
@@ -253,7 +264,9 @@ section {
   border-radius: 25px;
   transition: transform 0.5s;
 }
-
+.section-skills-item:last-child {
+  margin-bottom: 0px;
+}
 .section-skills-item:hover {
   transform: scale(1.2);
   font-size: 35px;
@@ -268,7 +281,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: auto;
+  /* height: auto; */
   background-color: #ffefcd;
   padding-bottom: 100px;
 }
@@ -301,7 +314,6 @@ section {
 .phone {
   width: 300px;
   display: flex;
-  flex-grow: 1;
   align-items: center;
 }
 
@@ -336,5 +348,88 @@ section {
 /* Form */
 .modal-form {
   display: flex;
+  gap: 10px;
+}
+
+.general-input {
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.modal-form-field {
+  width: 100%;
+}
+.form-field-input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+  border: 1px solid #424530;
+}
+
+.form-field-input:focus {
+  border: 1px solid #e09132;
+  outline: none;
+}
+
+.form-field-input:focus::placeholder {
+  color: #e09132;
+}
+
+.button-send {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #424530;
+  color: #ffefcd;
+}
+
+.button-send:hover {
+  background-color: #e09132;
+  color: #424530;
+}
+
+.textarea {
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: 0;
+  border: 1px solid #424530;
+}
+
+.textarea:focus {
+  border: 1px solid #e09132;
+  outline: none;
+}
+
+.textarea:focus::placeholder {
+  color: #e09132;
+}
+
+/* Footer */
+
+.footer-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a58e74;
+}
+.footer-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.footer-term {
+  color: #ffefcd;
 }
