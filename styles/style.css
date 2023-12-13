@@ -47,6 +47,12 @@
   src: url("../fonts/montserrat-v26-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+:root {
+  --var-green-dark: #424530;
+  --var-light-beige: #ffefcd;
+  --var-peach: #e09132;
+}
+
 /* Base */
 * {
   padding: 0;
@@ -57,7 +63,7 @@ html {
 }
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #ffefcd;
+  background-color: var(--var-light-beige);
 }
 
 .container {
@@ -87,7 +93,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
-  background-color: #ffefcd;
+  background-color: var(--var-light-beige);
 }
 
 .header-nav {
@@ -133,7 +139,7 @@ body {
 .header-nav-item {
   text-decoration: none;
   font-size: 20px;
-  color: #424530;
+  color: var(--var-green-dark);
   border-radius: 5px;
   transition: color 0.3s;
   padding: 10px;
@@ -141,13 +147,13 @@ body {
 
 .header-nav-item:hover {
   text-decoration: none;
-  color: #ffefcd;
-  background-color: #424530;
+  color: var(--var-light-beige);
+  background-color: var(--var-green-dark);
 }
 
 /* Hero */
 .hero-section {
-  background-color: #424530;
+  background-color: var(--var-green-dark);
   margin-bottom: 52px;
 }
 
@@ -168,12 +174,12 @@ body {
 .hero-section-title {
   font-size: 100px;
   font-weight: 900;
-  color: #ffefcd;
+  color: var(--var-light-beige);
 }
 
 /* About */
 .about-section {
-  background-color: #ffefcd;
+  background-color: var(--var-light-beige);
   margin-bottom: 52px;
 }
 
@@ -188,7 +194,7 @@ body {
   font-size: 65px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #424530;
+  color: var(--var-green-dark);
 }
 
 .about-section-info {
@@ -200,20 +206,21 @@ body {
 .about-section-item {
   font-size: 20px;
   font-weight: 500;
-  color: #424530;
+  color: var(--var-green-dark);
 }
 
 /* Skills */
 
 .section-skills {
-  background-color: #ffefcd;
+  background-color: var(--var-light-beige);
+  margin-bottom: 52px;
 }
 
 .section-skills-title {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  color: #e09132;
+  color: var(--var-peach);
   font-size: 65px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -240,24 +247,49 @@ body {
   width: 170px;
   padding: 20px;
   border-radius: 15px;
-  background-color: #424530;
-  color: #ffefcd;
+  background-color: var(--var-green-dark);
+  color: var(--var-light-beige);
   transition: transform 0.3s;
 }
 
 .section-skills-item:hover {
   transform: scale(1.2);
-  background-color: #e09132;
-  color: #424530;
+  background-color: var(--var-peach);
+  color: var(--var-green-dark);
 }
 
 /* Contacts */
-.section-contact {
+.contact-section {
+  background-color: var(--var-light-beige);
 }
 
+.contact-section-title {
+  width: 100%;
+  text-align: center;
+  color: var(--var-green-dark);
+  font-size: 65px;
+  font-weight: 700;
+}
+.contact-section-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container {
+  display: flex;
+}
+.form-container {
+  display: flex;
+}
+.container-label {
+  display: flex;
+  flex-direction: column;
+}
 /* Footer */
 .footer {
-  background-color: #424530;
+  background-color: var(--var-green-dark);
   padding: 10px 10px;
 }
 
@@ -275,5 +307,5 @@ body {
 }
 
 .footer-term {
-  color: #ffefcd;
+  color: var(--var-light-beige);
 }
