@@ -9,202 +9,97 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <div class="nav-container">
-          <ul class="header-nav-list-left">
-            <li><a class="header-nav-item" href="#">Home</a></li>
-            <li><a class="header-nav-item" href="#about_me">About me</a></li>
-          </ul>
-          <img class="header-nav-logo" src="./images/logo.svg" alt="Logo" />
-          <ul class="header-nav-list-right">
-            <li><a class="header-nav-item" href="#skills">Skills</a></li>
-            <li><a class="header-nav-item" href="#contacts">Contacts</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="header-nav">
+          <div class="nav-container">
+            <ul class="header-nav-list-left">
+              <li><a class="header-nav-item" href="#">Home</a></li>
+              <li><a class="header-nav-item" href="#about_me">About me</a></li>
+            </ul>
+            <img class="header-nav-logo" src="./images/logo.svg" alt="Logo" />
+            <ul class="header-nav-list-right">
+              <li><a class="header-nav-item" href="#skills">Skills</a></li>
+              <li><a class="header-nav-item" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <img
-            class="hero-section-photo"
-            src="./images/my-photo.jpg"
-            alt="My photo"
-          />
-          <h1 class="hero-section-title">Frontend <br />Developer</h1>
+          <div class="hero-section-container">
+            <img
+              class="hero-section-photo"
+              src="./images/my-photo.jpg"
+              alt="My photo"
+            />
+            <h1 class="hero-section-title">Frontend <br />Developer</h1>
+          </div>
         </div>
       </section>
-      <section id="about_me" class="section-about">
-        <h2 class="section-about-title">About me</h2>
-        <div class="section-about-info">
-          <p class="section-about-item">
-            Hello, everyone! Now at the beginning of the career of a
-            <span>Frontend developer</span>.
-          </p>
-          <p class="section-about-item">
-            Passed a course on JavaScript from Genius Space and Mate Academy.
-          </p>
-          <p class="section-about-item">
-            I am also in the final stage of a course on HTML/CSS. <br />
-            In parallel, I`m studying React. I really want to get a job in the
-            field of Frontend, <br />
-            because I enjoy creating websites and their dynamism.
-          </p>
-          <p class="section-about-item">
-            I will be glad to hear your suggestions.
-          </p>
+      <section id="about_me" class="about-section">
+        <div class="container">
+          <div class="about-section-container">
+            <h2 class="about-section-title">About me</h2>
+            <div class="about-section-info">
+              <p class="about-section-item">
+                Hello, everyone! Now at the beginning of the career of a
+                <span>Frontend developer</span>.
+              </p>
+              <p class="about-section-item">
+                Passed a course on JavaScript from Genius Space and Mate
+                Academy.
+              </p>
+              <p class="about-section-item">
+                I am also in the final stage of a course on HTML/CSS. <br />
+                In parallel, I`m studying React. I really want to get a job in
+                the field of Frontend, <br />
+                because I enjoy creating websites and their dynamism.
+              </p>
+              <p class="about-section-item">
+                I will be glad to hear your suggestions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="skills" class="section-skills">
-        <h2 class="section-skills-title">Skills</h2>
-        <ul class="section-skills-list">
+        <div class="container">
+          <h2 class="section-skills-title">Skills</h2>
           <div class="section-skills-container">
-            <div class="section-row-skills">
-              <li class="section-skills-item">
-                <a>HTML 5</a>
-              </li>
-              <li class="section-skills-item">
-                <a>CSS 3</a>
-              </li>
-              <li class="section-skills-item">
-                <a>JavaScript</a>
-              </li>
-            </div>
-            <div class="section-row-skills">
-              <li class="section-skills-item">
-                <a>React</a>
-              </li>
-              <li class="section-skills-item">
-                <a>SASS</a>
-              </li>
-              <li class="section-skills-item">
-                <a>BEM</a>
-              </li>
-            </div>
-            <div class="section-row-skills">
-              <li class="section-skills-item">
-                <a>Git</a>
-              </li>
-              <li class="section-skills-item">
-                <a>HTMX</a>
-              </li>
-              <li class="section-skills-item">
-                <a>Figma</a>
-              </li>
-            </div>
+            <ul class="section-skills-list">
+              <li class="section-skills-item"><a>HTML5</a></li>
+              <li class="section-skills-item"><a>CSS3</a></li>
+              <li class="section-skills-item"><a>JavaScript</a></li>
+            </ul>
+            <ul class="section-skills-list">
+              <li class="section-skills-item"><a>React</a></li>
+              <li class="section-skills-item"><a>SASS</a></li>
+              <li class="section-skills-item"><a>BEM</a></li>
+            </ul>
+            <ul class="section-skills-list">
+              <li class="section-skills-item"><a>Git</a></li>
+              <li class="section-skills-item"><a>HTMX</a></li>
+              <li class="section-skills-item"><a>Figma</a></li>
+            </ul>
           </div>
-        </ul>
+        </div>
       </section>
-      <section id="contacts" class="section-contact">
-        <h2 class="contact-section-title">Contact</h2>
-        <div class="container-contact">
-          <div class="contact-info">
-            <div class="mail contact">
-              <a
-                class="logo"
-                href="mailto:artem.syvohlaz@gmail.com"
-                target="_blank"
-              >
-                <svg class="contact-address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-mail3"></use>
-                </svg>
-              </a>
-              <p class="item-contact">artem.syvohlaz@gmail.com</p>
-            </div>
-            <div class="phone contact">
-              <a class="logo" href="tel:+380958293431" target="_blank">
-                <svg class="contact-address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </a>
-              <p class="item-contact">+38(095)-829-34-31</p>
-            </div>
-            <div class="location contact">
-              <a class="logo">
-                <svg class="contact-address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-location2"></use>
-                </svg>
-              </a>
-              <p class="item-contact">Kyiv, Ukraine</p>
-            </div>
-          </div>
-          <div class="form">
-            <form class="modal-form" name="contact-form" autocomplete="off">
-              <div class="container-form"></div>
-              <div class="general-input">
-                <div class="modal-form-field">
-                  <label
-                    class="form-field-label visually-hidden"
-                    for="user-name"
-                  >
-                    Ім'я
-                  </label>
-                  <input
-                    class="form-field-input"
-                    type="text"
-                    id="user-name"
-                    name="user-name"
-                    placeholder="Ім'я"
-                    minlength="2"
-                    maxlength="20"
-                    required
-                  />
-                </div>
-                <div class="modal-form-field">
-                  <label
-                    class="form-field-label visually-hidden"
-                    for="user-tel"
-                  >
-                    Телефон
-                  </label>
-                  <input
-                    class="form-field-input"
-                    type="tel"
-                    id="user-tel"
-                    name="user-tel"
-                    pattern="^\+[0-9]{12}"
-                    placeholder="Телефон"
-                    required
-                  />
-                </div>
-                <div class="modal-form-field">
-                  <label
-                    class="form-field-label visually-hidden"
-                    for="user-email"
-                  >
-                    Електронна пошта
-                  </label>
-                  <input
-                    class="form-field-input"
-                    type="email"
-                    id="user-email"
-                    name="user-email"
-                    placeholder="Електронна пошта"
-                    required
-                  />
-                </div>
-                <button class="button-send" type="submit">Send</button>
-              </div>
-              <div class=".modal-form-field-textarea">
-                <textarea
-                  class="textarea"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-            </form>
-          </div>
+      <section id="contacts" class="contact-section">
+        <div class="container">
+          <h2 class="contact-section-title">Contact</h2>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container">
-        <img class="footer-logo" src="./images/footer-logo.svg" alt="Logo" />
-        <p class="footer-term">
-          &copy;Цей сайт використовується як портфолія для резюме
-        </p>
+      <div class="container">
+        <div class="footer-container">
+          <img class="footer-logo" src="./images/footer-logo.svg" alt="Logo" />
+          <p class="footer-term">
+            &copy;Цей сайт використовується як портфолія для резюме
+          </p>
+        </div>
       </div>
     </footer>
   </body>
