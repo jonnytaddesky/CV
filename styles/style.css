@@ -355,9 +355,14 @@ body {
   border: 0;
 }
 .form-textarea {
+  resize: none;
   padding: 7px;
   border-radius: 7px;
   border: 0;
+}
+
+.form-textarea::placeholder {
+  color: lightgray;
 }
 
 /* Footer */
