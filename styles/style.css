@@ -51,6 +51,7 @@
   --var-green-dark: #424530;
   --var-light-beige: #ffefcd;
   --var-peach: #e09132;
+  --var-footer-back: #a58e74;
 }
 
 /* Base */
@@ -93,7 +94,9 @@ body {
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
-  background-color: var(--var-light-beige);
+  background-color: var(--var-footer-back);
+  position: sticky;
+  border-bottom: 1px solid var(--var-green-dark);
 }
 
 .header-nav {
@@ -123,7 +126,7 @@ body {
   margin-left: 150px;
 }
 .header-nav-logo {
-  width: 85px;
+  width: 50px;
   height: auto;
 }
 
@@ -138,8 +141,8 @@ body {
 
 .header-nav-item {
   text-decoration: none;
-  font-size: 20px;
-  color: var(--var-green-dark);
+  font-size: 16px;
+  color: var(--var-light-beige);
   border-radius: 5px;
   transition: color 0.3s;
   padding: 10px;
@@ -181,13 +184,17 @@ body {
 .about-section {
   background-color: var(--var-light-beige);
   margin-bottom: 52px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-section-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .about-section-title {
@@ -195,6 +202,42 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--var-green-dark);
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-contact {
+  padding: 10px;
+  border: 0;
+  border-radius: 6px;
+  background-color: var(--var-green-dark);
+  color: var(--var-light-beige);
+}
+
+.btn-contact:hover {
+  background-color: var(--var-peach);
+  color: var(--var-green-dark);
+}
+.btn-download {
+  padding: 10px;
+  border: 1px solid var(--var-peach);
+  border-radius: 6px;
+  background-color: var(--var-light-beige);
+  color: var(--var-peach);
+}
+.btn-download:hover {
+  background-color: var(--var-peach);
+  color: var(--var-green-dark);
+}
+
+.btn {
+  width: 200px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .about-section-info {
@@ -204,7 +247,7 @@ body {
 }
 
 .about-section-item {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--var-green-dark);
 }
@@ -213,7 +256,11 @@ body {
 
 .section-skills {
   background-color: var(--var-light-beige);
-  margin-bottom: 52px;
+  margin-bottom: 80px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-skills-title {
@@ -238,7 +285,7 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 20px;
+  gap: 40px;
 }
 
 .section-skills-item {
@@ -261,6 +308,10 @@ body {
 /* Contacts */
 .contact-section {
   background-color: var(--var-light-beige);
+  height: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
 .contact-section-title {
@@ -367,7 +418,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: var(--var-green-dark);
+  background-color: var(--var-footer-back);
   padding: 10px 10px;
 }
 
@@ -381,7 +432,7 @@ body {
 }
 
 .footer-logo {
-  width: 80px;
+  width: 50px;
 }
 
 .footer-term {
