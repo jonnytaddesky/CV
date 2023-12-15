@@ -85,11 +85,11 @@ body {
 
 /* Header */
 .header {
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,26 +117,18 @@ body {
   margin-bottom: 10px;
 }
 
-.header-nav-list-left {
+.header-nav-list {
   width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
+  align-items: center;
   list-style: none;
+  margin: 0;
   gap: 150px;
-  margin-left: 150px;
 }
 .header-nav-logo {
   width: 50px;
   height: auto;
-}
-
-.header-nav-list-right {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  list-style: none;
-  gap: 150px;
-  margin-right: 150px;
 }
 
 .header-nav-item {
@@ -157,7 +149,6 @@ body {
 /* Hero */
 .hero-section {
   background-color: var(--var-green-dark);
-  margin-bottom: 52px;
 }
 
 .hero-section-container {
@@ -165,11 +156,12 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 550px;
   gap: 150px;
 }
 
 .hero-section-photo {
-  margin: 20px;
+  margin: 10px;
   width: 350px;
   border-radius: 400px 400px 0 0;
 }
@@ -183,8 +175,8 @@ body {
 /* About */
 .about-section {
   background-color: var(--var-light-beige);
-  margin-bottom: 52px;
-  height: 600px;
+  /* margin-bottom: px; */
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
