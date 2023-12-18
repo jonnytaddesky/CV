@@ -346,24 +346,39 @@ body {
   margin-bottom: 20px;
 }
 
+.contact-subheader-info {
+  color: var(--var-green-dark);
+}
+
 .contact-main-info-link {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.logo {
+.info-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--var-green-dark);
   text-decoration: none;
+  gap: 10px;
+}
+.info-item span {
+  color: var(--var-green-dark);
+  transition: color 0.3s;
 }
 
-.contact-address-icon {
+.info-item:hover span {
+  color: var(--var-peach);
+}
+
+.info-item .icon {
   fill: var(--var-green-dark);
+  transition: fill 0.3s;
 }
 
+.info-item:hover .icon {
+  fill: var(--var-peach);
+}
 .contact-social-info {
   display: flex;
   flex-direction: column;
@@ -391,11 +406,18 @@ body {
   width: 200px;
   padding: 7px;
   border-radius: 7px;
-  border: 0;
+  border: 1px solid var(--var-light-beige);
+  color: var(--var-peach);
+  outline: none;
 }
-
+.from-input:focus {
+  border-color: var(--var-peach);
+}
 .from-input::placeholder {
-  color: lightgray;
+  color: var(--var-green-dark);
+}
+.from-input:focus::placeholder {
+  color: var(--var-peach);
 }
 
 .from-btn {
