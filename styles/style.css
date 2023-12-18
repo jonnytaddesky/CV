@@ -117,6 +117,14 @@ body {
   margin-bottom: 10px;
 }
 
+.progressbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+  background: var(--var-peach);
+}
 .header-nav-list {
   width: 100%;
   display: flex;
@@ -202,34 +210,44 @@ body {
   justify-content: center;
   gap: 10px;
 }
-.btn-contact {
+
+.about-section-btns {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 10px;
+}
+
+.btn-link {
   padding: 10px;
-  border: 0;
-  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
   background-color: var(--var-green-dark);
   color: var(--var-light-beige);
 }
 
-.btn-contact:hover {
-  background-color: var(--var-peach);
-  color: var(--var-green-dark);
-}
-.btn-download {
-  padding: 10px;
-  border: 1px solid var(--var-peach);
-  border-radius: 6px;
-  background-color: var(--var-light-beige);
-  color: var(--var-peach);
-}
-.btn-download:hover {
+.btn-link:hover {
   background-color: var(--var-peach);
   color: var(--var-green-dark);
 }
 
-.btn {
-  width: 200px;
-  font-size: 14px;
+.btn-download {
+  padding: 10px;
+  font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid var(--var-peach);
+  background-color: var(--var-light-beige);
+  color: var(--var-peach);
+}
+
+.btn-download:hover {
+  background-color: var(--var-peach);
+  color: var(--var-green-dark);
+  cursor: pointer;
 }
 
 .about-section-info {
@@ -417,10 +435,10 @@ body {
 .footer-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 20px;
 }
 
 .footer-logo {
