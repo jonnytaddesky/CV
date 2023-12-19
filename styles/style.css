@@ -94,7 +94,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
-  background-color: var(--var-footer-back);
+  background-color: var(--var-light-beige);
   position: sticky;
   border-bottom: 1px solid var(--var-green-dark);
 }
@@ -142,7 +142,7 @@ body {
 .header-nav-item {
   text-decoration: none;
   font-size: 16px;
-  color: var(--var-light-beige);
+  color: var(--var-peach);
   border-radius: 5px;
   transition: color 0.3s;
   padding: 10px;
@@ -410,12 +410,15 @@ body {
   color: var(--var-peach);
   outline: none;
 }
+
 .from-input:focus {
   border-color: var(--var-peach);
 }
+
 .from-input::placeholder {
   color: var(--var-green-dark);
 }
+
 .from-input:focus::placeholder {
   color: var(--var-peach);
 }
@@ -442,10 +445,17 @@ body {
   padding: 7px;
   border-radius: 7px;
   border: 0;
+  outline: none;
+  border: 1px solid var(--var-light-beige);
 }
 
 .form-textarea::placeholder {
-  color: lightgray;
+  color: var(--var-green-dark);
+}
+
+.form-textarea:active::placeholder {
+  border: 1px solid var(--var-peach);
+  color: var(--var-peach);
 }
 
 /* Footer */

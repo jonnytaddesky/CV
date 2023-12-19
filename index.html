@@ -165,34 +165,34 @@
             </div>
             <form
               class="form"
-              action="https://formspree.io/f/mnqeapka"
-              method="post"
+              action="https://formsubmit.co/fa37f679b73dbbc680b53b13e0f8ff94"
+              method="POST"
             >
               <div class="form-container">
                 <div class="form-container-input">
-                  <label class="visually-hidden" for="">Name</label>
+                  <label class="visually-hidden" for="name">Name</label>
                   <input
                     class="from-input"
                     type="text"
                     name="name"
-                    id="name"
                     placeholder="Name"
+                    required
                   />
-                  <label class="visually-hidden" for="">E-mail</label>
+                  <label class="visually-hidden" for="email">E-mail</label>
                   <input
                     class="from-input"
-                    type="email"
-                    name="_replyto"
-                    id="email"
-                    placeholder="Email"
+                    type="_replyto"
+                    name="email"
+                    placeholder="Your email"
+                    required
                   />
-                  <label class="visually-hidden" for="">Phone</label>
+                  <label class="visually-hidden" for="phone">Phone</label>
                   <input
                     class="from-input"
                     type="tel"
                     name="phone"
-                    id="phone"
                     placeholder="Phone"
+                    required
                   />
                   <button class="from-btn" type="submit">Send</button>
                 </div>
@@ -204,6 +204,28 @@
                   rows="10"
                   placeholder="Your Message"
                 ></textarea>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Хтось лишив листа на SA"
+                />
+                <input
+                  type="hidden"
+                  name="_autoresponse"
+                  value="Дякую за залишили свої дані, я напишу вам найближчим часом!"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://jonnytaddesky.github.io/CV/"
+                />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_cc"
+                  value="artem.syvohlaz@gmail.com"
+                />
               </div>
             </form>
           </div>
