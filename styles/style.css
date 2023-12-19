@@ -403,8 +403,8 @@ body {
 }
 
 .from-input {
-  width: 200px;
-  padding: 7px;
+  width: 300px;
+  padding: 10px;
   border-radius: 7px;
   border: 1px solid var(--var-light-beige);
   color: var(--var-peach);
@@ -447,15 +447,6 @@ body {
   border: 0;
   outline: none;
   border: 1px solid var(--var-light-beige);
-}
-
-.form-textarea::placeholder {
-  color: var(--var-green-dark);
-}
-
-.form-textarea:active::placeholder {
-  border: 1px solid var(--var-peach);
-  color: var(--var-peach);
 }
 
 /* Footer */
