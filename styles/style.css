@@ -171,7 +171,7 @@ body {
 .hero-section-photo {
   margin: 10px;
   width: 350px;
-  border-radius: 400px 400px 0 0;
+  border-radius: 20px;
 }
 
 .hero-section-title {
