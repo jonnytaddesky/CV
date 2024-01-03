@@ -315,6 +315,67 @@ body {
   color: var(--var-green-dark);
 }
 
+/* Works */
+.section-works {
+  background-color: var(--var-light-beige);
+  margin-bottom: 80px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-works-title {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--var-peach);
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-works-container {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.link-works {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bakery {
+  padding: 80px;
+  background-color: var(--var-green-dark);
+  color: var(--var-peach);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bakery:hover {
+  background-color: var(--var-peach);
+  color: var(--var-green-dark);
+}
+
+.todo {
+  padding: 80px;
+  background-color: var(--var-green-dark);
+  color: var(--var-peach);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.todo:hover {
+  background-color: var(--var-peach);
+  color: var(--var-green-dark);
+}
+
 /* Contacts */
 .contact-section {
   background-color: var(--var-light-beige);
